@@ -84,7 +84,9 @@ function validaPaciente(paciente) {
     if (!validaAltura(paciente.altura)) {
         erros.push("Altura é inválida");
     }
-
+   /* if () {
+        alert("IMC Fora do Padrão!");
+    } */
     return erros;
 }
 
