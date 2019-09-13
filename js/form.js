@@ -57,6 +57,14 @@ function montaTd(dado, classe) {
     return td;
 }
 
+function imcForaPadrao( ) {
+
+     if (validaPaciente == true) {
+        alert("IMC Fora do Padrão!");
+    } 
+    return erros;
+}
+
 function validaPaciente(paciente) {
 
     var erros = [];
@@ -84,9 +92,7 @@ function validaPaciente(paciente) {
     if (!validaAltura(paciente.altura)) {
         erros.push("Altura é inválida");
     }
-   /* if () {
-        alert("IMC Fora do Padrão!");
-    } */
+   
     return erros;
 }
 
