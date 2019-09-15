@@ -57,13 +57,13 @@ function montaTd(dado, classe) {
     return td;
 }
 
-function imcForaPadrao( ) {
+/*function imcForaPadrao( ) {
 
      if (validaPaciente == true) {
         alert("IMC Fora do Padrão!");
     } 
     return erros;
-}
+} */
 
 function validaPaciente(paciente) {
 
