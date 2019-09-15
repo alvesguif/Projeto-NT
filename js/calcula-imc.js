@@ -17,16 +17,17 @@ for (var i = 0; i < pacientes.length; i++) {
 
     var pesoEhValido = validaPeso(peso);
     var alturaEhValida = validaAltura(altura);
-
+    var gorduraValida = validaGordura(gordura);
+   
     if (!pesoEhValido) {
         pesoEhValido = false;
-        tdImc.textContent = "Peso inválido";
+        //tdImc.textContent = "Peso inválido";
         paciente.classList.add("paciente-invalido");
     }
 
     if (!alturaEhValida) {
         alturaEhValida = false;
-        tdImc.textContent = "Altura inválida";
+       // tdImc.textContent = "Altura inválida";
         paciente.classList.add("paciente-invalido");
     }
 
@@ -35,8 +36,6 @@ for (var i = 0; i < pacientes.length; i++) {
         tdImc.textContent = imc;
     }
 }
-
- 
 
 function calculaImc(peso, altura) {
     var imc = 0;
@@ -51,7 +50,7 @@ function validaPeso(peso) {
         return true;
     } else {
         return false;
-        imcPadrao(calculaImc);s
+        imcPadrao(calculaImc);
     }
 }
 
@@ -62,4 +61,14 @@ function validaAltura(altura) {
     } else {
         return false;
     }
+}
+
+function validaGordura(gordura) {
+
+    if (gordura >= 0) {
+        return true;  
+    } else {
+        return false;
+    }
+
 }

@@ -57,14 +57,6 @@ function montaTd(dado, classe) {
     return td;
 }
 
-/*function imcForaPadrao( ) {
-
-     if (validaPaciente == true) {
-        alert("IMC Fora do Padrão!");
-    } 
-    return erros;
-} */
-
 function validaPaciente(paciente) {
 
     var erros = [];
@@ -92,11 +84,15 @@ function validaPaciente(paciente) {
     if (!validaAltura(paciente.altura)) {
         erros.push("Altura é inválida");
     }
+    if (!validaGordura(paciente.gordura)) {
+        erros.push("Gordura inválida");
+    }
    
     return erros;
 }
 
 function exibeMensagensDeErro(erros) {
+    alert("Por Favor preencha os campos obrigatórios !");
     var ul = document.querySelector("#mensagens-erro");
     ul.innerHTML = "";
 
