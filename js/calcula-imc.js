@@ -1,5 +1,9 @@
 var titulo = document.querySelector(".titulo");
+var subTitulo = document.querySelector(".subTitulo");
+
 titulo.textContent = "Nutrition table";
+subTitulo.textContent = "Pacientes";
+
 
 var pacientes = document.querySelectorAll(".paciente");
 
