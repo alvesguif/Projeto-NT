@@ -1,4 +1,4 @@
-var botaoAdicionar = document.querySelector("#buscar-relogios");
+var botaoAdicionar = document.querySelector("#buscar-pacientes");
 botaoAdicionar.textContent = "Buscar Relógios";
 
 botaoAdicionar.addEventListener("click", function() {
